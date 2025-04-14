@@ -1,0 +1,42 @@
+title: "Correlative Multimodal Imaging for High-Throughput Single Cell Analysis of Natural Phytoplankton Ionomes"
+authors:
+  - name: "Joe S. K. Furby"
+    affiliation: "University of Southampton"
+    email: "jf7g18@soton.ac.uk"
+
+description: >
+  This dataset contains the processed optical light microscopy images, segmentation masks, and LA-TOF-ICP-MS data 
+  used to derive single-cell ionomic profiles of phytoplankton from surface ocean samples.
+
+version: "1.0"
+date_created: "2025-04-14"
+license: "CC-BY 4.0"
+
+data_files:
+  - path: data/LA TOF-ICP-MS/
+    description: "Raw output from LA-TOF-ICP-MS of analysed samples and NIST SRM glasses"
+  - path: data/Optical Images/
+    description: "Light microscopy images of natural phytoplankton cells on the sample filter membranes"
+  - path: data/Segmentation Masks/
+    description: "Manual and U-Net model-predicted segmentation mask image layers"
+  - path: data/Species and Volume/
+    description: "Manually identified cell species and volume estimates for segmented cells"
+  - path: data/U-Net Model Validation/
+    description: "Manual and U-Net model segmentation masks for validation image set"
+
+script:
+  - path: scripts/Phyto Ionome SCA.R
+    description: >
+      Main R script for a Critical Methods Initiative (CMI) pipeline to process LA-TOF-ICP-MS data and derive 
+      single-cell phytoplankton ionomes (normalized to P). Uses a U-Net neural network model for semantic 
+      segmentation of individual cells from microscopy images.
+
+keywords:
+  - correlative multimodal imaging
+  - single cell analysis
+  - phytoplankton
+  - ionomics
+  - laser ablation
+  - time-of-flight ICP-MS
+
+related_publication: "doi:10.xxxx/jaas.xxxxx"
