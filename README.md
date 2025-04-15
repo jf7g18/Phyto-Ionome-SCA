@@ -4,7 +4,7 @@
 
 **Authors**: Joe S. K. Furby  
 **Corresponding Author Contact**: [jf7g18@soton.ac.uk]  
-**Associated Manuscript**: Submitted to *Journal of Analytical Atomic Spectroscopy* (JAAS – Fast Transient Signals)
+**Associated Manuscript**: Submitted to *Journal of Analytical Atomic Spectroscopy* 
 
 ---
 
@@ -16,7 +16,7 @@ This repository contains the dataset and R script for deriving single-cell ionom
 - U-Net model semantic segmentation from optical imagery for single cell isolation 
 - LA-TOF-ICP-MS for multi-elemental quantification
 
-Single cell ionomes are extracted from the stacked LA-TOF-ICP-MS element concentration maps using segmentation masks (manual and U-Net model predicted). **NIST SRM 610 and 612** glasses serve as external standards, and **phosphorus (P)** is used as an internal standard to normalize cellular ionomes for semi-quantitative multi-element analysis at the single-cell level.
+Single cell ionomes are extracted from the stacked LA-TOF-ICP-MS element concentration maps using segmentation masks (manual and U-Net model predicted). **NIST SRM 610 and 612** glasses serve as external standards, and **phosphorus (P)** is used as an internal standard to normalize cellular ionomes for semi-quantitative multi-element analysis of natural phytoplankton at the single-cell level.
 
 The goal is to enable **reproducible and high-throughput ionome analysis** of natural phytoplankton communities using an open, script-driven pipeline.
 
@@ -51,5 +51,5 @@ The goal is to enable **reproducible and high-throughput ionome analysis** of na
  └── Phyto Ionome SCA.R                            # Main R script for processing and analysis pipeline
 
 📄 README.md                                        # This file
-📄 metadata.yaml                                    # Optional: Structured metadata for repository contents
+📄 metadata.yaml                                    # Structured metadata for repository contents
 ```
