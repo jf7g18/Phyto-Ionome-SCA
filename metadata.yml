@@ -6,7 +6,7 @@ authors:
 
 description: >
   This dataset contains the processed optical light microscopy images, segmentation masks, and LA-TOF-ICP-MS data 
-  used to derive single-cell ionomic profiles of phytoplankton from surface ocean samples.
+  used to derive single-cell multi-element stoichiometries of phytoplankton from surface Southern Ocean samples.
 
 version: "1.0"
 date_created: "2025-04-14"
@@ -27,9 +27,9 @@ data_files:
 script:
   - path: scripts/Phyto Ionome SCA.R
     description: >
-      Main R script for a Critical Methods Initiative (CMI) pipeline to process LA-TOF-ICP-MS data and derive 
-      single-cell phytoplankton ionomes (normalized to P). Uses a U-Net neural network model for semantic 
-      segmentation of individual cells from microscopy images.
+      Main R script for a Correlative Multimodal Imaging (CMI) pipeline to process LA-TOF-ICP-MS data and derive 
+      single-cell phytoplankton ionomes (normalized to P), using a U-Net neural network model for semantic 
+      segmentation of individual cells from light microscopy images.
 
 keywords:
   - correlative multimodal imaging
@@ -39,4 +39,3 @@ keywords:
   - laser ablation
   - time-of-flight ICP-MS
 
-related_publication: "doi:10.xxxx/jaas.xxxxx"
